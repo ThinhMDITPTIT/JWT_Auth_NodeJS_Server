@@ -1,0 +1,40 @@
+GET http://localhost:3000/posts
+Authorization: Bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpZCI6MSwidXNlcm5hbWUiOiJUb255IE1EIiwiaWF0IjoxNjgyNjEyMjI2LCJleHAiOjE2ODI2MTI1MjZ9.53dCRqLl-mKombIjwRi8l-6YdemzP_9BOslgbbV6pe0
+
+################################
+
+GET http://localhost:3000/posts
+Authorization: Bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpZCI6MiwidXNlcm5hbWUiOiJKYW5lIERvZSIsImlhdCI6MTY4MjYxMjA5NSwiZXhwIjoxNjgyNjEyMzk1fQ.0T2WN9YfE2rIdJFTF3YMYQVoOTIqMozUCyPrKQ8IqYM
+
+################################
+
+POST http://localhost:4000/login
+Content-Type: application/json
+
+{
+  "username": "Tony MD"
+}
+
+################################
+
+POST http://localhost:4000/login
+Content-Type: application/json
+
+{
+  "username": "Jane Doe"
+}
+
+################################
+
+POST http://localhost:4000/token
+Content-Type: application/json
+
+{
+  "refreshToken": "eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpZCI6MSwidXNlcm5hbWUiOiJUb255IE1EIiwiaWF0IjoxNjgyNjEwNDY4LCJleHAiOjE2ODI2MTQwNjh9.08EuRyBGQim5dULZwKjA-_6JAXLFzeugunr8iAGPyW8"
+}
+
+################################
+
+DELETE http://localhost:4000/logout
+Authorization: Bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpZCI6MSwidXNlcm5hbWUiOiJUb255IE1EIiwiaWF0IjoxNjgyNjEyMjI2LCJleHAiOjE2ODI2MTI1MjZ9.53dCRqLl-mKombIjwRi8l-6YdemzP_9BOslgbbV6pe0
+
